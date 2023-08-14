@@ -29,7 +29,7 @@ function App() {
         <hr className="container-line" />
         <div className="author">
           <div className="author-img"></div>
-          <p>Creation of <a className="author-name">Temur Tsintsadze</a></p>
+          <p>Creation of <a href="https://github.com/TTsintsadze?tab=repositories" className="author-name">Temur Tsintsadze</a></p>
         </div>
       </div>
     </div>
