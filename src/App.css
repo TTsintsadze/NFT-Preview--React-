@@ -72,7 +72,7 @@ body {
   padding-top: 0.5rem;
 }
 
-.container-title h1 a {
+.container-title h1 {
   text-decoration: none;
   color: var(--white);
   font-size: 1.4rem;
@@ -139,7 +139,6 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 15px;
-
 }
 
 .author-img {
@@ -162,7 +161,7 @@ body {
 }
 
 .author-name:hover,
-.container-title h1 p:hover {
+.container-title h1 a:hover {
   color: var(--cyan);
   transition: color ease-in 0.3s;
 }
