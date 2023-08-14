@@ -1,38 +1,175 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --main-font: "Outfit", sans-serif;
+  --card-background: rgb(20, 37, 61);
+  --main-background: rgb(13, 25, 43);
+  --cyan: rgb(0, 255, 247);
+  --white: rgb(255, 255, 255);
+  --soft-blue: rgb(139, 172, 218);
+  --dark-blue: rgb(47, 65, 91);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  background-color: var(--main-background);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-container {
+  width: 100%;
+  max-width: 21.8rem;
+  margin: 0 auto;
+  margin-top: 9.1rem;
+  margin-bottom: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nft-container {
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: var(--card-background);
+}
+
+.container-image {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  max-width: 18.75rem;
+  height: auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.main-image {
+  background-image: url("../public/image-equilibrium.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 18.75rem;
+  width: 100%;
+}
+
+.color-image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 18.75rem;
+  height: auto;
+  background-image: none;
+}
+
+.color-image:hover {
+  background-image: url("../public/icon-view.svg");
+  background-color: var(--cyan);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 20% 20%;
+  opacity: 0.5;
+  transition: background-color ease-in-out 0.3s;
+}
+
+.container-title {
+  padding-top: 0.5rem;
+}
+
+.container-title h1 a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.container-title p {
+  color: var(--soft-blue);
+  font-size: 1.1rem;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.container-details {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -0.5rem;
+}
+
+.pricing,
+.timing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.pricing {
+  color: var(--cyan);
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.timing {
+  gap: 10px;
+  color: var(--soft-blue);
+  text-align: right;
+}
+
+.pricing-img,
+.timing-img {
+  min-width: 20px;
+  min-height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pricing-img {
+  background-image: url("../public/icon-ethereum.svg");
+}
+
+.timing-img {
+  background-image: url("../public/icon-clock.svg");
+}
+
+.container-line {
+  border: 1px solid var(--dark-blue);
+  opacity: 0.5;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+
+}
+
+.author-img {
+  background-image: url('../public/image-avatar.png');
+  background-size: cover;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  height: 2rem;
+  width: 2rem;
+}
+
+.author p {
+  color: var(--soft-blue);
+}
+
+.author-name {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.author-name:hover,
+.container-title h1 a:hover {
+  color: var(--cyan);
+  transition: color ease-in 0.3s;
+}
+
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    margin-top: 3.75rem;
   }
 }
