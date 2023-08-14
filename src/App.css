@@ -162,7 +162,7 @@ body {
 }
 
 .author-name:hover,
-.container-title h1 a:hover {
+.container-title h1 p:hover {
   color: var(--cyan);
   transition: color ease-in 0.3s;
 }

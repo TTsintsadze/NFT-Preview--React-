@@ -9,7 +9,7 @@ function App() {
           <div className="color-image"></div>
         </div>
         <div className="container-title">
-          <h1><a href="https://fb.com/temo.tsintsadze">Equilibrium #3429</a></h1>
+          <h1>Equilibrium #3429</h1>
           <p>Our Equilibrium collection promotes balance and calm.</p>
         </div>
         <div className="container-details">
@@ -29,7 +29,7 @@ function App() {
         <hr className="container-line" />
         <div className="author">
           <div className="author-img"></div>
-          <p>Creation of <a href="https://fb.com/temo.tsintsadze" className="author-name">Temur Tsintsadze</a></p>
+          <p>Creation of <p className="author-name">Temur Tsintsadze</p></p>
         </div>
       </div>
     </div>
